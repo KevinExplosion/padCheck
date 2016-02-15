@@ -1,12 +1,12 @@
 # Word Puzzle
 
-#### A website that creates de-voweled words.
+#### Short Description
 
-#### By Tyler Suderman & Abby Rolling
+#### By Name
 
 ## Description
 
-This website accepts a user input and returns the input with vowels replaced with "-". The aim of the build was to show proficiency in BDD in Java as well as other fundamentals learned in week one of Epicodus Java course.
+## Installation Instructions
 
 ## Known Bugs
 
@@ -25,4 +25,4 @@ This website accepts a user input and returns the input with vowels replaced wit
 
 Licensed under the GPL.
 
-Copyright (c) 2016 **Tyler Suderman**
+Copyright (c) 2016 **Name**
