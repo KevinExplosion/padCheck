@@ -17,17 +17,27 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-    // @Test
-    // public void rootTest() {
-    //     goTo("http://localhost:4567/change");
-    //     assertThat(pageSource()).contains("Input the number of cents");
-    // }
+  @Test
+  public void rootTest() {
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Regulation Pad Check");
+  }
 
-    // @Test
-    // public void fillFormTest() {
-    //     goTo("http://localhost:4567/change");
-    //     fill("#changeInput").with("33");
-    //     submit("#submit");
-    //     assertThat(pageSource()).contains("Your change for");
-    // }
+  @Test
+  public void padsAreNotRegulation() {
+    goTo("http://localhost:4567/");
+    fill("#width").with("13");
+    fill("#length").with("45");
+    submit(".btn");
+    assertThat(pageSource()).contains("Your pads are not regulation");
+  }
+
+    @Test
+    public void padsAreRegulation() {
+      goTo("http://localhost:4567/");
+      fill("#width").with("11");
+      fill("#length").with("35");
+      submit(".btn");
+      assertThat(pageSource()).contains("Your pads are regulation");
+  }
 }
