@@ -1,4 +1,4 @@
-# Word Puzzle
+# Title
 
 #### Short Description
 
@@ -9,7 +9,6 @@
 ## Installation Instructions
 
 ## Known Bugs
-
 
 ## Technologies Used
 
